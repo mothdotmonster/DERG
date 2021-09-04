@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 6131ABF8
+P 6700 3800
+F 0 "R1" V 6493 3800 50  0001 C CNN
+F 1 "100R" V 6700 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6630 3800 50  0001 C CNN
+F 3 "~" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 613255D0
+P 4300 4150
+F 0 "C1" H 4415 4196 50  0000 L CNN
+F 1 "0.1uF" H 4415 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4338 4000 50  0001 C CNN
+F 3 "~" H 4300 4150 50  0001 C CNN
+F 4 "C49678 " H 4300 4150 50  0001 C CNN "JLC"
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6131F0B0
+P 6550 4700
+F 0 "SW1" V 6550 4850 50  0000 L CNN
+F 1 "SW_Push" V 6650 4850 50  0001 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6550 4900 50  0001 C CNN
+F 3 "~" H 6550 4900 50  0001 C CNN
+	1    6550 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6134E181
+P 4000 4200
+F 0 "BT1" H 3882 4204 50  0000 R CNN
+F 1 "Battery_Cell" H 3882 4295 50  0000 R CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 4000 4260 50  0001 C CNN
+F 3 "~" V 4000 4260 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61341489
+P 5200 4000
+F 0 "R3" V 4993 4000 50  0001 C CNN
+F 1 "220R" V 5200 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 4000 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61342017
+P 5200 3800
+F 0 "R5" V 4993 3800 50  0001 C CNN
+F 1 "220R" V 5200 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 3800 50  0001 C CNN
+F 3 "~" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6134199C
+P 5200 3900
+F 0 "R4" V 4993 3900 50  0001 C CNN
+F 1 "220R" V 5200 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 3900 50  0001 C CNN
+F 3 "~" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6133E6C1
+P 5200 4100
+F 0 "R2" V 4993 4100 50  0001 C CNN
+F 1 "220R" V 5200 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 613BF0FA
+P 7050 3700
+F 0 "J1" H 7022 3724 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 7022 3633 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7050 3700 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny1614-SS U1
+U 1 1 613CD06D
+P 5950 4200
+F 0 "U1" H 5950 5300 50  0000 C CNN
+F 1 "ATtiny1614-SS" H 5950 5200 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5950 4200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 5950 4200 50  0001 C CNN
+F 4 "C481364 " H 5950 4200 50  0001 C CNN "JLC"
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 613DB1F1
+P 4950 3800
+F 0 "D1" H 4950 4035 50  0001 C CNN
+F 1 "LED_Small" H 4950 3944 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" V 4950 3800 50  0001 C CNN
+F 3 "~" V 4950 3800 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 613E5D24
+P 4950 3900
+F 0 "D2" H 4950 4135 50  0001 C CNN
+F 1 "LED_Small" H 4950 4044 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" V 4950 3900 50  0001 C CNN
+F 3 "~" V 4950 3900 50  0001 C CNN
+	1    4950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 613E60A5
+P 4950 4000
+F 0 "D3" H 4950 4235 50  0001 C CNN
+F 1 "LED_Small" H 4950 4144 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" V 4950 4000 50  0001 C CNN
+F 3 "~" V 4950 4000 50  0001 C CNN
+	1    4950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 613E64CB
+P 4950 4100
+F 0 "D4" H 4950 4335 50  0001 C CNN
+F 1 "LED_Small" H 4950 4244 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" V 4950 4100 50  0001 C CNN
+F 3 "~" V 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3800 4850 3900
+Connection ~ 4850 3900
+Wire Wire Line
+	4850 3900 4850 4000
+Connection ~ 4850 4000
+Wire Wire Line
+	4850 4000 4850 4100
+Wire Wire Line
+	5950 4900 4850 4900
+Wire Wire Line
+	4850 4900 4850 4100
+Connection ~ 4850 4100
+$Comp
+L power:GND #PWR0101
+U 1 1 613FBF94
+P 6850 3700
+F 0 "#PWR0101" H 6850 3450 50  0001 C CNN
+F 1 "GND" V 6855 3572 50  0000 R CNN
+F 2 "" H 6850 3700 50  0001 C CNN
+F 3 "" H 6850 3700 50  0001 C CNN
+	1    6850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 613FC2D5
+P 6850 3600
+F 0 "#PWR0102" H 6850 3450 50  0001 C CNN
+F 1 "VCC" V 6865 3727 50  0000 L CNN
+F 2 "" H 6850 3600 50  0001 C CNN
+F 3 "" H 6850 3600 50  0001 C CNN
+	1    6850 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 613FD59D
+P 5950 4900
+F 0 "#PWR0103" H 5950 4650 50  0001 C CNN
+F 1 "GND" H 5955 4727 50  0000 C CNN
+F 2 "" H 5950 4900 50  0001 C CNN
+F 3 "" H 5950 4900 50  0001 C CNN
+	1    5950 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 4900
+$Comp
+L power:VCC #PWR0104
+U 1 1 613FDE67
+P 5950 3500
+F 0 "#PWR0104" H 5950 3350 50  0001 C CNN
+F 1 "VCC" H 5965 3673 50  0000 C CNN
+F 2 "" H 5950 3500 50  0001 C CNN
+F 3 "" H 5950 3500 50  0001 C CNN
+	1    5950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 61408D44
+P 4150 4000
+F 0 "#PWR0105" H 4150 3850 50  0001 C CNN
+F 1 "VCC" H 4165 4173 50  0000 C CNN
+F 2 "" H 4150 4000 50  0001 C CNN
+F 3 "" H 4150 4000 50  0001 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 614097CE
+P 4150 4300
+F 0 "#PWR0106" H 4150 4050 50  0001 C CNN
+F 1 "GND" H 4155 4127 50  0000 C CNN
+F 2 "" H 4150 4300 50  0001 C CNN
+F 3 "" H 4150 4300 50  0001 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4000 4150 4000
+Connection ~ 4150 4000
+Wire Wire Line
+	4150 4000 4300 4000
+Wire Wire Line
+	4000 4300 4150 4300
+Connection ~ 4150 4300
+Wire Wire Line
+	4150 4300 4300 4300
+Wire Wire Line
+	5950 4900 6550 4900
+$Comp
+L Connector:Conn_01x08_Male J2
+U 1 1 6141B24A
+P 7100 4300
+F 0 "J2" H 7072 4182 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 7072 4273 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7100 4300 50  0001 C CNN
+F 3 "~" H 7100 4300 50  0001 C CNN
+	1    7100 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6141E5CE
+P 6900 4500
+F 0 "#PWR0107" H 6900 4250 50  0001 C CNN
+F 1 "GND" V 6905 4372 50  0000 R CNN
+F 2 "" H 6900 4500 50  0001 C CNN
+F 3 "" H 6900 4500 50  0001 C CNN
+	1    6900 4500
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 6141E5D4
+P 6900 4600
+F 0 "#PWR0108" H 6900 4450 50  0001 C CNN
+F 1 "VCC" V 6915 4727 50  0000 L CNN
+F 2 "" H 6900 4600 50  0001 C CNN
+F 3 "" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6550 4400 6900 4400
+Wire Wire Line
+	6900 4300 6550 4300
+Wire Wire Line
+	6550 4200 6900 4200
+Wire Wire Line
+	6900 4100 6550 4100
+Wire Wire Line
+	6550 4000 6900 4000
+Wire Wire Line
+	6900 3900 6550 3900
+Text Label 6900 4400 2    50   ~ 0
+PA6
+Text Label 6900 4300 2    50   ~ 0
+PA5
+Text Label 6900 4200 2    50   ~ 0
+PA4
+Text Label 6900 4100 2    50   ~ 0
+PA3
+Text Label 6900 4000 2    50   ~ 0
+PA2
+Text Label 6900 3900 2    50   ~ 0
+PA1
+Text Label 6550 4500 0    50   ~ 0
+PA7
+Text Label 6550 3800 0    50   ~ 0
+PA0
+Text Label 6850 3800 0    50   ~ 0
+UPDI
+Text Label 5350 3800 0    50   ~ 0
+PB0
+Text Label 5350 3900 0    50   ~ 0
+PB1
+Text Label 5350 4000 0    50   ~ 0
+PB2
+Text Label 5350 4100 0    50   ~ 0
+PB3
+Text Label 5050 3800 0    50   ~ 0
+LED1
+Text Label 5050 3900 0    50   ~ 0
+LED2
+Text Label 5050 4000 0    50   ~ 0
+LED3
+Text Label 5050 4100 0    50   ~ 0
+LED4
+$EndSCHEMATC
